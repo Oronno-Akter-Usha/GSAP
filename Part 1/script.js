@@ -39,10 +39,20 @@
 // });
 
 // ----- repeat property ------
+// gsap.to("#box", {
+//   x: 1200,
+//   duration: 2,
+//   delay: 1,
+//   rotate: 360,
+//   repeat: -1,
+// });
+
+// ----- yoyo property -----
 gsap.to("#box", {
   x: 1200,
   duration: 2,
   delay: 1,
   rotate: 360,
-  repeat: 1,
+  repeat: -1,
+  yoyo: true,
 });
