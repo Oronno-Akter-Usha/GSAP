@@ -16,7 +16,7 @@ body {
   background-color: #111;
 }
 
-/* #box1 {
+#box1 {
   height: 300px;
   width: 300px;
   background-color: crimson;
@@ -25,10 +25,15 @@ body {
   height: 300px;
   width: 300px;
   background-color: lightseagreen;
-} */
+}
+#box3 {
+  height: 300px;
+  width: 300px;
+  background-color: royalblue;
+}
 
-#box {
+/* #box {
   height: 300px;
   width: 300px;
   background-color: crimson;
-}
+} */
