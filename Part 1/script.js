@@ -79,23 +79,40 @@
 // });
 
 // ----- timeline -----
+// var tl = gsap.timeline();
+
+// tl.to("#box1", {
+//   x: 1500,
+//   rotate: 360,
+//   duration: 1.5,
+//   delay: 1,
+// });
+
+// tl.to("#box2", {
+//   x: 1500,
+//   color: "yellow",
+//   duration: 1.5,
+// });
+// tl.to("#box3", {
+//   x: 1500,
+//   scale: 0.5,
+//   borderRadius: "50%",
+//   duration: 1.5,
+// });
+
+// ----- nav bar animation -----
 var tl = gsap.timeline();
 
-tl.to("#box1", {
-  x: 1500,
-  rotate: 360,
-  duration: 1.5,
-  delay: 1,
+tl.from("h2", {
+  y: -20,
+  opacity: 0,
+  duration: 1,
+  delay: 0.5,
 });
 
-tl.to("#box2", {
-  x: 1500,
-  color: "yellow",
-  duration: 1.5,
-});
-tl.to("#box3", {
-  x: 1500,
-  scale: 0.5,
-  borderRadius: "50%",
-  duration: 1.5,
+tl.from("h4", {
+  y: -20,
+  opacity: 0,
+  duration: 1,
+  stagger: 0.3,
 });

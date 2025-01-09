@@ -16,7 +16,19 @@ body {
   background-color: #111;
 }
 
-#box1 {
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 50px;
+}
+
+#part2 {
+  display: flex;
+  gap: 50px;
+}
+
+/* #box1 {
   height: 300px;
   width: 300px;
   background-color: crimson;
@@ -30,7 +42,7 @@ body {
   height: 300px;
   width: 300px;
   background-color: royalblue;
-}
+} */
 
 /* #box {
   height: 300px;
