@@ -1,21 +1,12 @@
-gsap.from("#section1 .box", {
-  scale: 0,
-  delay: 1,
-  duration: 2,
-  rotate: 360,
-});
-gsap.from("#section2 .box", {
-  scale: 0,
-  opacity: 0,
-  duration: 2,
-  rotate: 720,
+gsap.to("#section2 h1", {
+  transform: "translateX(-150%)",
   scrollTrigger: {
-    trigger: "#section2 .box",
+    trigger: "#section2",
     scroller: "body",
     markers: true,
-    start: "top 60%",
-    end: "top 30%",
+    start: "top 0%",
+    end: "top -100%",
     scrub: 2,
-    pin: "true",
+    pin: true,
   },
 });
