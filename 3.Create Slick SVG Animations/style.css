@@ -18,8 +18,6 @@ body {
 #string {
   height: 200px;
   width: 100%;
-  background-color: red;
-}
-
-svg {
+  /* background-color: red; */
+  text-align: center;
 }
