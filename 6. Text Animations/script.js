@@ -3,10 +3,16 @@ function breakTheText() {
   var h1Text = h1.textContent;
 
   var splittedText = h1Text.split("");
+  var halfValue = splittedText.length / 2;
+
   var clutter = "";
 
-  splittedText.forEach(function (e) {
-    clutter += `<span>${e}</span>`;
+  splittedText.forEach(function (e, i) {
+    if (i < halfValue) {
+      clutter += `<span class="a">${e}</span>`;
+    } else {
+      clutter += `<span class="b">${e}</span>`;
+    }
   });
 
   h1.innerHTML = clutter;
@@ -14,10 +20,18 @@ function breakTheText() {
 
 breakTheText();
 
-gsap.from("h1 span", {
-  y: 50,
+gsap.from("h1 .a", {
+  y: 80,
   opacity: 0,
-  duration: 0.8,
+  duration: 0.6,
   delay: 0.5,
   stagger: 0.15,
+});
+
+gsap.from("h1 .b", {
+  y: 80,
+  opacity: 0,
+  duration: 0.6,
+  delay: 0.5,
+  stagger: -0.15,
 });
